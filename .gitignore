@@ -1,0 +1,31 @@
+# .gitignore - 適用於純 HTML/CSS 專案
+
+# --- 作業系統產生的檔案 ---
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# --- 編輯器與 IDE 設定 ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.project
+.settings/
+
+# --- 暫存與記錄檔 ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- 如果未來有使用 Sass/Less 等預處理器 ---
+.sass-cache/
+*.css.map
+
+# --- 排除大型原始素材 (選擇性) ---
+# 如果你有很大的原始影片或高解析度原始圖檔，不建議放上 GitHub
+# 可以把這類檔案放在一個名為 'raw_assets' 的資料夾並取消註解下面這行
+# raw_assets/
