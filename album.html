@@ -3,49 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Album | CITI Lab</title>
+    <title>Album | AIIU Lab</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <nav>
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <img src="assets/logo.jpg" alt="CITI Logo">
-                <span>CITI Lab</span>
+                <img src="assets/AIIU_logo.png" alt="AIIU Lab Logo">
+                <span>AIIU Lab</span>
             </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="members.html">Members</a></li>
                 <li><a href="publications.html">Publications</a></li>
-                <li><a href="album.html">Album</a></li>
+                <li><a class="active" href="album.html">Album</a></li>
                 <li><a href="joinus.html">Join Us</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
-        <h2>Lab Life & Moments</h2>
-        
-        <div class="album-grid">
-            <div class="album-item" data-description="Presenting our research at WACV 2026, Tucson.">
-                <img src="assets/logo.jpg" alt="Conference Trip">
-            </div>
-
-            <div class="album-item" data-description="Presenting our research at CVPR 2025, Nashville.">
-                <img src="assets/logo.jpg" alt="Conference Trip">
-            </div>
-
-            <div class="album-item" data-description="Group photo at CITI Building entrance. (Autumn 2025)">
-                <img src="assets/logo.jpg" alt="Group Photo">
-            </div>
-
-            <div class="album-item" data-description="Happy hour after a productive weekly meeting.">
-                <img src="assets/logo.jpg" alt="Happy Hour">
-            </div>
+    <header class="page-hero album-hero">
+        <div class="page-hero-inner">
+            <p class="eyebrow">Lab Life</p>
+            <h1>Album</h1>
+            <p>A running visual journal for conference trips, demos, group moments, and research milestones from AIIU Lab.</p>
         </div>
-    </div>
+    </header>
 
-    <footer>&copy; 2026 Artificial Intelligence & Image Understanding (AIIU) Lab, CITI, Academia Sinica</footer>
+    <main class="container">
+        <section>
+            <div class="section-heading">
+                <h2>Moments</h2>
+            </div>
+            <div class="album-grid">
+                <article class="album-item" data-description="AIIU Lab profile photo from Academia Sinica research feature.">
+                    <img src="assets/album/chen-jun-cheng-05.jpg" alt="Jun-Cheng Chen Academia Sinica research feature">
+                </article>
+                <article class="album-item" data-description="AIIU Lab research feature image from Academia Sinica.">
+                    <img src="assets/album/chen-jun-cheng-06.jpg" alt="AIIU Lab Academia Sinica research feature">
+                </article>
+                <article class="album-item" data-description="WACV 2026 research highlights: generative control, stereo pose estimation, concept erasure, and domain-adaptive detection.">
+                    <img src="assets/thumb-generative.png" alt="WACV 2026 research highlight">
+                </article>
+                <article class="album-item" data-description="CVPR 2025 and CVPR 2026 directions: deepfake detection, agentic data generation, and visual foundation models.">
+                    <img src="assets/thumb-multimodal.png" alt="CVPR research highlight">
+                </article>
+                <article class="album-item" data-description="Physical AI and 3D perception: stereo geometry, object pose, and dynamic scene rendering.">
+                    <img src="assets/thumb-physical-ai.png" alt="Physical AI research highlight">
+                </article>
+                <article class="album-item" data-description="AI security themes: watermark robustness, backdoors, adversarial attacks, and trustworthy generative AI.">
+                    <img src="assets/thumb-security.png" alt="AI security research highlight">
+                </article>
+                <article class="album-item" data-description="AIIU Lab identity: artificial intelligence, image understanding, robotics, and multimodal reasoning.">
+                    <img src="assets/aiiu-hero-banner.png" alt="AIIU Lab visual identity">
+                </article>
+                <article class="album-item album-logo-tile" data-description="More lab photos can be added here as conference, demo, and group images become available.">
+                    <img src="assets/AIIU_logo.png" alt="AIIU Lab logo">
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>&copy; 2026 Artificial Intelligence and Image Understanding (AIIU) Lab, CITI, Academia Sinica</footer>
 </body>
 </html>

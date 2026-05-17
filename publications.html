@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications | AIIU Lab</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -9,78 +10,440 @@
     <nav>
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <img src="assets/logo.jpg" alt="CITI Logo">
+                <img src="assets/AIIU_logo.png" alt="AIIU Lab Logo">
                 <span>AIIU Lab</span>
             </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="members.html">Members</a></li>
-                <li><a href="publications.html">Publications</a></li>
+                <li><a class="active" href="publications.html">Publications</a></li>
                 <li><a href="album.html">Album</a></li>
                 <li><a href="joinus.html">Join Us</a></li>
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <!-- Journal -->
-        <section id="publications">
-            <h2>Journal Papers</h2>
-            <ul class="pub-list">
-                <li class="pub-item">
-                    <span class="pub-title">Your Paper Name.</span> 
-                    Your Name., <span class="pub-venue">ArXiv Preprint</span>, 2025.
-                    <span class="pub-links">
-                        <a href="#">[Paper]</a>
-                    </span>
-                </li>
 
-                <li class="pub-item">
-                    <span class="pub-title">Your Paper Name.</span> 
-                    Your Name., <span class="pub-venue">ArXiv Preprint</span>, 2025.
-                    <span class="pub-links">
-                        <a href="#">[Paper]</a>
-                    </span>
-                </li>
+    <header class="page-hero">
+        <div class="page-hero-inner">
+            <p class="eyebrow">AIIU Lab Research Record</p>
+            <h1>Publications</h1>
+            <p>Full publication list based on Dr. Jun-Cheng Chen's official record, enriched with verified paper links, project/code links, extracted public teasers where available, and topic thumbnails as fallback.</p>
+        </div>
+    </header>
 
-                <li class="pub-item">
-                    <span class="pub-title">Your Paper Name.</span> 
-                    Your Name., <span class="pub-venue">ArXiv Preprint</span>, 2025.
-                    <span class="pub-links">
-                        <a href="#">[Paper]</a>
-                    </span>
-                </li>
-            </ul>
-        </section>
-        <!-- Conference -->
-        <section id="publications">
-            <h2>Conference Papers</h2>
-            <ul class="pub-list">
-                <li class="pub-item">
-                    <span class="pub-title">Your Paper Name.</span> 
-                    Your Name., <span class="pub-venue">ArXiv Preprint</span>, 2025.
-                    <span class="pub-links">
-                        <a href="#">[Paper]</a>
-                    </span>
-                </li>
+    <main class="container">
+        <div class="pub-tools" aria-label="Publication controls">
+            <div class="pub-filters">
+                <button class="pub-filter active" type="button" data-filter="all">All</button>
+                <button class="pub-filter" type="button" data-filter="Journal Articles">Journals</button>
+                <button class="pub-filter" type="button" data-filter="Conference Papers">Conferences</button>
+                <button class="pub-filter" type="button" data-filter="Book & Book Chapters">Book Chapter</button>
+            </div>
+            <input class="pub-search" type="search" placeholder="Search publications" aria-label="Search publications">
+        </div>
 
-                <li class="pub-item">
-                    <span class="pub-title">Your Paper Name.</span> 
-                    Your Name., <span class="pub-venue">ArXiv Preprint</span>, 2025.
-                    <span class="pub-links">
-                        <a href="#">[Paper]</a>
-                    </span>
-                </li>
+        <div id="publication-root"></div>
+    </main>
 
-                <li class="pub-item">
-                    <span class="pub-title">Your Paper Name.</span> 
-                    Your Name., <span class="pub-venue">ArXiv Preprint</span>, 2025.
-                    <span class="pub-links">
-                        <a href="#">[Paper]</a>
-                    </span>
-                </li>
-            </ul>
-        </section>
-    </div>
-    <footer>&copy; 2026 Artificial Intelligence & Image Understanding (AIIU) Lab, CITI, Academia Sinica</footer>
+    <template id="publication-data">
+Journal Articles|Shih-Fang Chen, Jun-Cheng Chen, I-Hong Jhuo, and Yen-Yu Lin, "GOT-JEPA: Generic Object Tracking with Model Adaptation and Occlusion Handling using Joint-Embedding Predictive Architecture," to appear in IEEE Transactions on Circuits and Systems for Video Technology (TCSVT).
+Journal Articles|Shih-Fang Chen, Jun-Cheng Chen, I-Hong Jhuo, Yen-Yu Lin, "Improving Visual Object Tracking through Visual Prompting," IEEE Transactions on Multimedia, volume 27, pages 2682 - 2694, January 2025.
+Journal Articles|Jingcheng Ke, Dele Wang, Jun-Cheng Chen, I-Hong Jhuo, Chia-Wen Lin, Yen-Yu Lin, "Make Graph-based Referring Expression Comprehension Great Again through Expression-guided Dynamic Gating and Regression," IEEE Transactions on Multimedia, volume 27, pages 1950 - 1961, December 2024.
+Journal Articles|Chia-Yi Lin, Jun-Cheng Chen, Ja-Ling Wu, "A Lightweight Enhancement Approach for Real-Time Semantic Segmentation by Distilling Rich Knowledge from Pre-Trained Vision-Language Model," APSIPA Transactions on Signal and Information Processing, volume 13, number 5, pages e400, October 2024.
+Journal Articles|Sarwar Khan, Jun-Cheng Chen, Wen-Hung Liao, Chu-Song Chen, "Towards Adversarial Robustness for Multi-Mode Data through Metric Learning," Sensors, volume 23, number 13, pages 6173, July 2023.
+Journal Articles|Jingcheng Ke, Jia Wang, Jun-Cheng Chen, I-Hong Jhuo, Chia-Wen Lin and Yen-Yu Lin, "CLIPREC: Graph-based Domain Adaptive Network for Zero-Shot Referring Expression Comprehension," IEEE Transactions on Multimedia, volume 26, pages 2480-2492, July 2023, Early Access.
+Journal Articles|Jiun-Da Lin, Yue-Hua Han, Po-Han Huang, Julianne Tan, Jun-Cheng Chen, M. Tanveer, Kai-Lung Hua, "DEFAEK: Domain Effective Fast Adaptive Network for Face Anti-Spoofing," Neural Networks, volume 161, pages 83-91, April 2023.
+Journal Articles|Yi-Lun Pan, Jun-Cheng Chen, Ja-Ling Wu, "Towards a Controllable and Reversible Privacy Protection System for Facial Images through Enhanced Multi-Factor Modifier Networks," Entropy, volume 25, number 2, pages 272, February 2023.
+Journal Articles|Ching-Hao Wang, Kang-Yang Huang, Yao Yi, Jun-Cheng Chen, Hong-Han Shuai, and Wen-Huang Cheng, "Lightweight Deep Learning: An Overview," IEEE Consumer Electronics Magazine, pages 1 - 12, June 2022.
+Journal Articles|Jiun-Da Lin, Hung-Hsiang Lin, Jilyan Dy, Jun-Cheng Chen, M. Tanveer, Imran Razzak, Kai-Lung Hua, "Lightweight Face Anti-Spoofing Network for Telehealth Applications," IEEE Journal of Biomedical and Health Informatics, volume 26, number 5, pages 1987 - 1996, May 2022.
+Journal Articles|Hung-Hsiang Lin, Jiun-Da Lin, Jose Jaena Mari Ople, Jun-Cheng Chen, and Kai-Lung Hua, "Social Media Popularity Prediction based on Multi-modal Self-Attention Mechanisms," IEEE Access, volume 10, pages 4448 - 4455, December 2021.
+Journal Articles|Chien-Wen Chen, Min-Chun Hu, Wei-Ta Chu, Jun-Cheng Chen, "A Real-Time Sculpting and Terrain Generation System for Interactive Content Creation," IEEE Access, volume 9, pages 114914 - 114928, August 2021.
+Journal Articles|Jingxiao Zheng, Rajeev Ranjan, Ching-Hui Chen, Jun-Cheng Chen, Carlos D Castillo, Rama Chellappa, "An Automatic System for Unconstrained Video-based Face Recognition," IEEE Transactions on Biometrics, Behavior, and Identity Science, volume 2, number 3, pages 194-209, July 2020.
+Journal Articles|Boyu Lu, Jun-Cheng Chen, Rama Chellappa, "UID-GAN: Unsupervised Image Deblurring via Disentangled Representations," IEEE Transactions on Biometrics, Behavior, and Identity Science, volume 2, number 1, pages 26-39, January 2020.
+Journal Articles|Matthew Q. Hill, Connor J. Parde, Carlos D. Castillo, Y. Ivette Colon, Rajeev Ranjan, Jun-Cheng Chen, Volker Blanz, and Alice J. O'Toole, "Deep Convolutional Neural Networks In the Face of Caricature," Nature Machine Intelligence, volume 1, number 11, pages 522-529, November 2019.
+Journal Articles|Rajeev Ranjan, Ankan Bansal, Jingxiao Zheng, Hongyu Xu, Joshua Gleason, Boyu Lu, Anirudh Nanduri, Jun-Cheng Chen, Carlos D Castillo, Rama Chellappa, "A Fast and Accurate System for Face Detection, Identification, and Verification," IEEE Transactions on Biometrics, Behavior, and Identity Science, volume 1, number 2, pages 82-96, April 2019.
+Journal Articles|Boyu Lu, Jun-Cheng Chen, Carlos D Castillo, Rama Chellappa, "An Experimental Evaluation of Covariates Effects on Unconstrained Face Verification," IEEE Transactions on Biometrics, Behavior, and Identity Science, volume 1, number 1, pages 42-55, January 2019.
+Journal Articles|Wei-An Lin, Jun-Cheng Chen, Rajeev Ranjan, Ankan Bansal, Swami Sankaranarayanan, Carlos D Castillo, Rama Chellappa, "Proximity-Aware Hierarchical Clustering of Unconstrained Faces," Image and Vision Computing, volume 77, pages 33-44, September 2018.
+Journal Articles|P Jonathon Phillips, Amy N Yates, Ying Hu, Carina A Hahn, Eilidh Noyes, Kelsey Jackson, Jacqueline G Cavazos, Geraldine Jeckeln, Rajeev Ranjan, Swami Sankaranarayanan, Jun-Cheng Chen, Carlos D Castillo, Rama Chellappa, David White, Alice J O'Toole, "Face Recognition Accuracy of Forensic Examiners, Superrecognizers, and Face Recognition Algorithms," Proceedings of the National Academy of Sciences, volume 115, number 24, pages 6171-6176, June 2018.
+Journal Articles|Jun-Cheng Chen, Rajeev Ranjan, Swami Sankaranarayanan, Amit Kumar, Ching-Hui Chen, Vishal M Patel, Carlos D Castillo, Rama Chellappa, "Unconstrained Still/Video-based Face Verification with Deep Convolutional Neural Networks," International Journal of Computer Vision, volume 126, number 2-4, pages 272-291, April 2018.
+Journal Articles|Rajeev Ranjan, Swami Sankaranarayanan, Ankan Bansal, Navaneeth Bodla, Jun-Cheng Chen, Vishal M Patel, Carlos D Castillo, Rama Chellappa, "Deep learning for understanding faces: Machines may be just as good, or better, than humans," IEEE Signal Processing Magazine, volume 35, number 1, pages 66-83, January 2018.
+Journal Articles|Wei-Ta Chu, Jun-Cheng Chen, Ja-Ling Wu, "Tiling Slideshow: An Audiovisual Presentation Method for Consumer Photos," IEEE MultiMedia, volume 14, number 3, pages 36-45, July 2007.
+Conference Papers|Chun-Tin Wu, Jun-Cheng Chen, "4D Neural Voxel Splatting: Dynamic Scene Rendering with Voxelized Guassian Splatting," to appear in IEEE International Conference on Image Processing (ICIP).
+Conference Papers|Cheng-Yi Lee, Yichi Zhang, Yuchen Yang, Chun-Shien Lu, Jun-Cheng Chen, "Rethinking Forgery Attacks on Semantic Watermarks in Black-Box Settings: A Geometric Distortion Perspective," to appear in International Conference on Machine Learning (ICML).
+Conference Papers|Jing-En Huang, I-Sheng Fang, Tzuhsuan Huang, Yu-Lun Liu, Chih-Yu Wang, Jun-Cheng Chen, "Gen-n-Val: Agentic Image Data Generation and Validation," to appear in IEEE/CVF Conference on Computer Vision and Pattern Recognition (Finding Track) (CVPR Finding).
+Conference Papers|Pin-Yen Chiu, Dai-Jie Wu, Po-Hsun Chu, Chia-Hsuan Hsu, Hsiang-Chen Chiu, Chih-Yu Wang, Jun-Cheng Chen, "StyleDiT: A Unified Framework for Diverse Child and Partner Faces Synthesis with Style Latent Diffusion Transformer," to appear in IEEE International Conference on Automatic Face and Gesture Recognition (FG).
+Conference Papers|Ernie Chu, I-Sheng Fang, Tai-Ming Huang, Pin-Yen Chiu, Vishal Patel, Jun-Cheng Chen, "Adapt2Hide: Leveraging Off-the-shelf Autoencoder for Reversible Visual Processing," to appear in IEEE International Conference on Image Processing (ICIP).
+Conference Papers|Shih-Fang Chen, Jun-Cheng Chen, I-Hong Jhuo, and Yen-Yu Lin, "GOT-Edit: Geometry-Aware Generic Object Tracking via Online Model Editing," to appear in International Conference on Learning Representations (ICLR).
+Conference Papers|Wei-Han Chen, Yu-Feng Chen, Jun-Cheng Chen, "Cohesion: Consensus-based Hallucination Subspace Estimation for Multimodal Large Language Models," IEEE International conference on Image Processing (ICIP), September 2026.
+Conference Papers|Chen-Che Huang, Tzuhsuan Huang, Jun-Cheng Chen, "CropAT: Leveraging Diffusion-Generated Target-Like Cropped Objects for Pseudo-Label Refinement in Domain-Adaptive Object Detection," IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), March 2026.
+Conference Papers|Pin-Yen Chiu, I-Sheng Fang, Jun-Cheng Chen, "Text Slider: Efficient and Plug-and-Play Continuous Concept Control for Image/Video Synthesis via LoRA Adapters," IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), March 2026.
+Conference Papers|Ying-Kun Wu, Yi Shen, Tzuhsuan Huang, I-Sheng Fang, Jun-Cheng Chen, "KMOPS: Keypoint-Driven Method for Multi-Object Pose and Metric Size Estimation from Stereo Images," IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), March 2026.
+Conference Papers|Ju Hsuan Weng, Jia-Wei Liao, Cheng-Fu Chou, Jun-Cheng Chen, "M-ErasureBench: A Comprehensive Multimodal Evaluation Benchmark for Concept Erasure in Diffusion Models," IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), March 2026.
+Conference Papers|Yang-Che Sun, Cheng Yu Yeo, Ernie Chu, Jun-Cheng Chen, Yu-Lun Liu, "FIPER: Factorized Features for Robust Image Super-Resolution and Compression," Annual Conference on Neural Information Processing Systems (NeurIPS), December 2025.
+Conference Papers|Pei-Kang Lee, Jun-Cheng Chen, Ja-ling Wu, "Harnessing Large Language and Vision-Language Models for Robust Out-of-Distribution Detection," Asian Conference on Machine Learning (ACML), December 2025.
+Conference Papers|Tzuhsuan Huang, Cheng Yu Yeo, Tsai-Ling Huang, Hong-Han Shuai, Wen-Huang Cheng, Jun-Cheng Chen, "Enhancing Robustness in Post-Processing Watermarking: An Ensemble Attack Network Using CNNs and Transformers," ACM Workshop on Artificial Intelligence and Security (AISec'25) held in joint with ACM Conference on Computer and Communications Security (CCS), October 2025.
+Conference Papers|Yen-Ku Yeh, Chun-Hao Yang, Kun-Tai Wu, Yan-Tsung Peng, Chun-Rong Huang, Jun-Cheng Chen, "Restore Anything Anywhere: Targeted Image Restoration with Object Segmentation and Text Guidance," IEEE International Workshop on Multimedia Signal Processing (MMSP), September 2025.
+Conference Papers|Shu-Tzu Lo, Tai-Ming Huang, Yue-Hua Han, Kai-Lung Hua, Jun-Cheng Chen, "ExDF: Explainable Deepfake Detection with Vision-Language Model," IEEE International conference on Image Processing (ICIP), September 2025, spotlight.
+Conference Papers|Shih-Jui Liang, Zihao Chen, Jun-Cheng Chen, Yan-Tsung Peng, "Enhancing Image Deraining through VLM-Based Data Refinement and Classification," IEEE International conference on Image Processing (ICIP), September 2025, oral.
+Conference Papers|I-Chung Chiu, Jun-Cheng Chen, I-Hong Jhuo, and Yen-Yu Lin, "Consistent View Synthesis with Bidirectional Epipolar Attention and Reconstruction," IEEE International Conference on Image Processing (ICIP), September 2025, oral.
+Conference Papers|Shuo-Yen Lin, Ernie Chu, Po-Hung Yeh, Jun-Cheng Chen, Jia-Ching Wang, "Diffusion to Confusion: Naturalistic Adversarial Patch Generation Based on Diffusion Model for Object Detector," IEEE International conference on Image Processing (ICIP), September 2025.
+Conference Papers|Yu-Feng Chen, Tzuhsuan Huang, Pin-Yen Chiu, Jun-Cheng Chen, "Invisible Backdoor Triggers in Image Editing Model via Deep Watermarking," IEEE International Conference on Advanced Visual and Signal-Based Systems (AVSS), August 2025.
+Conference Papers|Jun-Cheng Chen, "CSS: Clustering-guided SliderSpace for Under-represented Visual Concept Exploration of Diffusion Models," IEEE International Conference on Advanced Visual and Signal-Based Systems (AVSS), August 2025.
+Conference Papers|Wa-Kin Lei, Jun-Cheng Chen, and Shang-Tse Chen, "DRAG: Data Reconstruction Attack using Guided Diffusion," International Conference on Machine Learning (ICML), July 2025.
+Conference Papers|Yue-Hua Han, Tai-Ming Huang, Kai-Lung Hua, Jun-Cheng Chen, "Towards More General Video-based Deepfake Detection through Facial Feature Guided Adaptation for Foundation Model," IEEE/CVF Computer Vision and Pattern Recognition (CVPR), June 2025.
+Conference Papers|Jingcheng Ke, Jun-Cheng Chen, I-Hong Jhuo, Chia-Wen Lin, Yen-Yu Lin, "Generation and Comprehension Hand-in-Hand: Vision-guided Expression Diffusion for Boosting Referring Expression Generation and Comprehension," International Conference on Learning Representations (ICLR), April 2025.
+Conference Papers|Po-Hung Yeh, Kuang-Huei Lee, Jun-Cheng Chen, "Training-Free Diffusion Model Alignment with Sampling Demons," International Conference on Learning Representations (ICLR), April 2025.
+Conference Papers|ChunYen Shih, Li-Xuan Peng, Jia-Wei Liao, Ernie Chu, Cheng-Fu Chou, Jun-Cheng Chen, "Pixel Is Not A Barrier: An Effective Evasion Attack for Pixel-Domain Diffusion Models," AAAI Conference on Artificial Intelligence, February 2025.
+Conference Papers|Jia-Wei Liao, Winston Wang, Tzu-Sian Wang, Li-Xuan Peng, Ju-Hsuan Weng, Cheng-Fu Chou, Jun-Cheng Chen, "DiffQRCoder: Diffusion-based Aesthetic QR Code Generation with Scanning Robustness Guided Iterative Refinement," IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), February 2025.
+Conference Papers|Tsung-Han Chou, Brian Wang, Wei-Chen Chiu, Jun-Cheng Chen, "A Recipe for CAC: Mosaic-based Generalized Loss for Improved Class-Agnostic Counting," Asian Conference on Computer Vision (ACCV), December 2024.
+Conference Papers|Tai-Ming Huang, Yue-Hua Han, Ernie Chu, Shu-Tzu Lo, Kai-Lung Hua, and Jun-Cheng Chen, "Generalized Image-based Deepfake Detection through Foundation Model Adaptation," International Conference on Pattern Recognition (ICPR), December 2024.
+Conference Papers|Dai-Jie Wu, Pin-Yen Chiu, Chih-Yu Wang, Jun-Cheng Chen, "Towards Validating Face Editing Ability in Generative Models," IEEE International Conference on Visual Communications and Image Processing (VCIP), December 2024.
+Conference Papers|I-Sheng Fang, Yue-Hua Han, Jun-Cheng Chen, "Camera Settings as Tokens: Modeling Photography on Latent Diffusion Models," Siggraph Asia, December 2024.
+Conference Papers|Yu-Chen Lin, Wei-Hua Li, Jun-Cheng Chen, Chu-Song Chen, "ACCEPT: Adaptive Codebook for Composite and Efficient Prompt Tuning," Findings of Conference on Empirical Methods in Natural Language Processing (EMNLP Findings), November 2024.
+Conference Papers|Chia-Wei Chen, Jen-Cheng Hou, Yu Tsao, Jun-Cheng Chen, Shao-Yi Chien, "DAVSE: A Diffusion-Based Generative Approach for Audio-Visual Speech Enhancement," Interspeech Workshop - 3rd COG-MHEAR Audio-Visual Speech Enhancement Challenge (AVSEC-3), September 2024.
+Conference Papers|Yi-Cheng Huang, Wei-Hua Li, Chih-Han Tsou, Jun-Cheng Chen, Chu-Song Chen, "UP-NAS: Unified Proxy for Neural Architecture Search," IEEE/CVF Computer Vision and Pattern Recognition Workshop (CVPRW), June 2024.
+Conference Papers|Tzuhsuan Huang, Chen-Che Huang, Chung-Hao Ku, Jun-Cheng Chen, "BLENDA: Domain Adaptive Object Detection through Diffusion-based Blending," IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), April 2024.
+Conference Papers|Ernie Chu, Tzuhsuan Huang, Shuo-Yen Lin, Jun-Cheng Chen, "MeDM: Mediating Image Diffusion Models for Video-to-Video Translation with Temporal Correspondence Guidance," AAAI Conference on Artificial Intelligence (AAAI), February 2024.
+Conference Papers|Sarwar Khan, Jun-Cheng Chen, Wen-Hung Liao, Chu-Song Chen, "Adversarially Robust Deepfake Detection via Adversarial Feature Similarity Learning," International Multimedia Modelling Conference (MMM), January 2024.
+Conference Papers|Po-Han Huang, Yue-Hua Han, Ernie Chu, Jun-Cheng Chen, Kai-Lung Hua, "Multi-Task Self-Blended Images for Face Forgery Detection," ACM Multimedia Asia, December 2023.
+Conference Papers|Po-Hung Yeh, Pei-Yuan Wu, Jun-Cheng Chen, "Improved Photometric Stereo through Efficient and Differentiable Shadow Estimation," British Machine Vision Conference (BMVC), November 2023.
+Conference Papers|Chiao-Chang Chang, Bo-Cheng Yang, Yi-Ting Liu, Jun-Cheng Chen, I-Hong Jhuo, Yen-Yu Lin, "Task-Adaptive Feature Matching Loss for Image Deblurring," IEEE International Conference on Image Processing, October 2023.
+Conference Papers|Chia-Yi Lin, Jun-Cheng Chen, and Ja-Ling Wu, "Enhancing Real-Time Semantic Segmentation with Textual Knowledge of Pre-Trained Vision-Language Model: A Lightweight Approach," Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), October 2023.
+Conference Papers|ChangSung Sung, Jun-Cheng Chen, Chu-Song Chen, "Hearing and Seeing Abnormality: Self-supervised Audio-Visual Mutual Learning for Deepfake Detection," IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), June 2023.
+Conference Papers|Li-Chen Cheng, Shu-Chuan Hsu, Pin-Hua Lee, Hsiu-Chieh Lee, Che-Hsien Lin, Jun-Cheng Chen, Chih-Yu Wang, "KinStyle: A Strong Baseline Photorealistic Kinship Face Synthesis with An Optimized StyleGAN Encoder," Asian Conference on Computer Vision (ACCV), December 2022.
+Conference Papers|Shuo-Yen Lin, Jun-Cheng Chen, Jia-Ching Wang, "A Comparative Study of Cross-Model Universal Adversarial Perturbation for Face Forgery," IEEE International Conference on Visual Communications and Image Processing (VCIP), December 2022.
+Conference Papers|Chieh-Yin Liao, Chen-Hsiu Huang, Jun-Cheng Chen, Ja-Ling Wu, "Enhancing the Robustness of Deep Learning Based Fingerprinting to Improve Deepfake Attribution," ACM Multimedia Asia conference (MMAsia), December 2022.
+Conference Papers|Jia Wang, Hung-Yi Wu, Jun-Cheng Chen, Hong-Han Shuai, Wen-Huang Cheng, "Residual Graph Attention Network and Expression-Respect Data Augmentation Aided Visual Grounding," IEEE International Conference on Image Processing (ICIP), October 2022.
+Conference Papers|Tom Liao, Jun-Cheng Chen, Shyh-Kang Jeng, Chunhwei Tai, "Cross-Domain Knowledge Transfer for Skeleton-based Action Recognition based on Graph Convolutional Gradient Reversal Layer," IEEE International Conference on Multimedia Information Processing and Retrieval (MIPR), August 2022.
+Conference Papers|Hsiu-Chieh Lee, Che-Hsien Lin, Li-Chen Cheng, Shu-Chuan Hsu, Jun-Cheng Chen, Chih-Yu Wang, "Kinship Face Synthesis Evaluation Website with Gamified Mechanism," IEEE International Conference on Multimedia and Expo (ICME), July 2022.
+Conference Papers|Timmy S. T. Wan, Jun-Cheng Chen, Tzer-Yi Wu, Chu-Song Chen, "Continual Learning for Visual Search with Backward Consistent Feature Embedding," IEEE/CVF International Conference on Computer Vision and Pattern Recognition (CVPR), June 2022.
+Conference Papers|Hsuan-An Hsia, Che-Hsien Lin, Bo-Han Kung, Jhao-Ting Chen, Daniel Stanley Tan, Jun-Cheng Chen, Kai-Lung Hua, "CLIPCAM: A Simple Baseline for Zero-shot Text-guided Object and Action Localization," IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), May 2022.
+Conference Papers|Anshul Shah, Shlok Mishra, Ankan Bansal, Jun-Cheng Chen, Rama Chellappa, Abhinav Shrivastava, "Pose and Joint-Aware Action Recognition," Winter Conference on Applications of Computer Vision (WACV), January 2022.
+Conference Papers|Che-Hsien Lin, Hung-Chun Chen, Li-Chen Cheng, Shu-Chuan Hsu, Jun-Cheng Chen, Chih-Yu Wang, "StyleDNA: A High-Fidelity Age and Gender Aware Kinship Face Synthesizer," IEEE International Conference on Automatic Face and Gesture Recognition (FG), December 2021.
+Conference Papers|Yu-Chih-Tuan Hu, Bo-Han Kung, Daniel Stanley Tan, Jun-Cheng Chen, Kai-Lung Hua, Wen-Huang Cheng, "Naturalistic Physical Adversarial Patch for Object Detectors," IEEE/CVF International Conference on Computer Vision (ICCV), October 2021.
+Conference Papers|Bo-Han Kung, Pin-Chun Chen, Yu-Cheng Liu, Jun-Cheng Chen, "Squeeze and Reconstruct: Improved Practical Adversarial Defense using Paired Image Compression and Reconstruction," IEEE International Conference on Image Processing, September 2021.
+Conference Papers|Yi-Lun Pan, Jun-Cheng Chen, Ja-Ling Wu, "A Multi-factor Combinations Enhanced Reversible Privacy Protection System for Facial Images," IEEE International Conference on Multimedia & Expo (ICME), July 2021.
+Conference Papers|Ching-Hao Wang, Kang-Yang Huang, Jun-Cheng Chen, Hong-Han Shuai, and Wen-Huang Cheng, "Heterogeneous Federated Learning through Multi-branch Network," IEEE International Conference on Multimedia & Expo (ICME), July 2021.
+Conference Papers|Chih-Ting Liu, Jun-Cheng Chen, Chu-Song Chen, Shao-Yi Chien, "Video-based Person Re-identification without Bells and Whistles," CVPR Biometrics Workshop, June 2021.
+Conference Papers|Pin-Chun Chen, Bo-Han Kung, Jun-Cheng Chen, "Class-Aware Robust Adversarial Training for Object Detection," IEEE International Conference on Computer Vision and Pattern Recognition (CVPR), June 2021.
+Conference Papers|Yu-Cheng Liu, Chia-Ming Chang, I-Hsuan Chen, Yu-Ru Ku, Jun-Cheng Chen, "An Experimental Evaluation of Recent Face Recognition Losses for Deepfake Detection," IEEE International Conference on Pattern Recognition (ICPR), January 2021.
+Conference Papers|Chon Hou Sio, Yu-Jen Ma, Hong-Han Shuai, Jun-Cheng Chen, Wen-Huang Cheng, "S^2SiamFC: Self-supervised Fully Convolutional Siamese Network for Visual Tracking," ACM Multimedia (MM), October 2020.
+Conference Papers|Pirazh Khorramshahi, Neehar Peri, Jun-Cheng Chen, Rama Chellappa, "The Devil is in the Details: Self-Supervised Attention for Vehicle Re-Identification," European Conference on Computer Vision (ECCV), August 2020.
+Conference Papers|Neehar Peri, Pirazh Khorramshahi, Sai Saketh Rambhatla, Vineet Shenoy, Saumya Rawat, Jun-Cheng Chen and Rama Chellappa, "Towards Real-Time Systems for Vehicle Re-Identification, Multi-Camera Tracking, and Anomaly Detection," 4th AI City Challenge Workshop, under CVPR, June 2020.
+Conference Papers|Chang-Ti Huang, Jun-Cheng Chen, Ja-Ling Wu, "Learning Sparse Neural Networks Through Mixture-Distributed Regularization," Workshop on Efficient Deep Learning for Computer Vision, under CVPR, June 2020.
+Conference Papers|Tsung-Hung Hsieh, Jun-Cheng Chen, Chu-Song Chen, "Label Reuse for Efficient Semi-supervised Learning," International Conference on Acoustics, Speech, and Signal Processing (ICASSP), May 2020.
+Conference Papers|Cheng-Yu Fan, Chao-Peng Liu, Kuan-Chun Wang, Jiun-Hao Jhan, Yu-Chiang Frank Wang, Jun-Cheng Chen, "Face Feature Recovery via Temporal Fusion for Person Search," International Conference on Acoustics, Speech, and Signal Processing (ICASSP), May 2020.
+Conference Papers|Joshua Gleason, Steven Schwarcz, Rajeev Ranjan, Carlos Castillo, Jun-Cheng Chen, Rama Chellappa, "Activity Detection in Untrimmed Videos Using Chunk-based Classifiers," HADCV Workshop under WACV, March 2020.
+Conference Papers|Jingxiao Zheng, Ruichi Yu, Jun-Cheng Chen, Boyu Lu, Carlos Castillo, Rama Chellappa, "Uncertainty Modeling of Contextual-Connection between Tracklets for Unconstrained Video-based Face Recognition," International Conference in Computer Vision (ICCV), October 2019.
+Conference Papers|Pirazh Khorramshahi, Amit Kumar, Neehar Peri, Sai Saketh Rambhatla, Jun-Cheng Chen, Rama Chellappa, "A Dual Path Model With Adaptive Attention For Vehicle Re-Identification," International Conference in Computer Vision (ICCV), October 2019, oral.
+Conference Papers|Jingxiao Zheng, Jun-Cheng Chen, Vishal Patel, Carlos Castillo, Rama Chellappa, "Hybrid Dictionary Learning and Matching for Video-based Face Verification," IEEE International Conference on Biometrics: Theory, Applications and Systems, September 2019.
+Conference Papers|Boyu Lu, Jun-Cheng Chen, Rama Chellappa, "Unsupervised Domain-Specific Deblurring via Disentangled Representations," IEEE International Conference on Computer Vision and Pattern Recognition (CVPR), June 2019.
+Conference Papers|Joshua Gleason, Rajeev Ranjan, Steven Schwarcz, Carlos Castillo, Jun-Cheng Chen, Rama Chellappa, "A Proposal-Based Solution to Spatio-Temporal Action Detection in Untrimmed Videos," IEEE Winter Conference on Applications of Computer Vision (WACV), January 2019.
+Conference Papers|Jun-Cheng Chen, Wei-An Lin, Jingxiao Zheng, Rama Chellappa, "A Real-Time Multi-Task Single Shot Face Detector," IEEE International Conference on Image Processing (ICIP), October 2018.
+Conference Papers|Amit Kumar, Pirazh Khorramshahi, Wei-An Lin, Prithviraj Dhar, Jun-Cheng Chen, Rama Chellappa, "A Semi-Automatic 2D Solution for Vehicle Speed Estimation from Monocular Videos," IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), June 2018.
+Conference Papers|Wei-An Lin, Jun-Cheng Chen, Carlos D Castillo, Rama Chellappa, "Deep Density Clustering of Unconstrained Faces," IEEE Conference on Computer Vision and Pattern Recognition (CVPR), June 2018.
+Conference Papers|Connor J Parde, Carlos Castillo, Matthew Q Hill, Y Ivette Colon, Swami Sankaranarayanan, Jun-Cheng Chen, Alice J O'Toole, "Face and Image Representation in Deep CNN Features," IEEE International Conference on Automatic Face & Gesture Recognition (FG), May 2017.
+Conference Papers|Ching-Hui Chen, Jun-Cheng Chen, Carlos D Castillo, Rama Chellappa, "Video-based Face Association and Identification," IEEE International Conference on Automatic Face & Gesture Recognition (FG), May 2017.
+Conference Papers|Wei-An Lin, Jun-Cheng Chen, Rama Chellappa, "A Proximity-Aware Hierarchical Clustering of Faces," IEEE International Conference on Automatic Face & Gesture Recognition (FG), May 2017.
+Conference Papers|Boyu Lu, Jingxiao Zheng, Jun-Cheng Chen, Rama Chellappa, "Pose-Robust Face Verification by Exploiting Competing Tasks," IEEE Winter Conference on Applications of Computer Vision (WACV), March 2017.
+Conference Papers|Navaneeth Bodla, Jingxiao Zheng, Hongyu Xu, Jun-Cheng Chen, Carlos Castillo, Rama Chellappa, "Deep Heterogeneous Feature Fusion for Template-based Face Recognition," IEEE Winter Conference on Applications of Computer Vision (WACV), March 2017.
+Conference Papers|Boyu Lu, Jun-Cheng Chen, Rama Chellappa, "Regularized Metric Adaptation for Unconstrained Face Verification," International Conference on Pattern Recognition (ICPR), December 2016.
+Conference Papers|Jingxiao Zheng, Jun-Cheng Chen, Navaneeth Bodla, Vishal M Patel, Rama Chellappa, "Vlad Encoded Deep Convolutional Features for Unconstrained Face Verification," International Conference on Pattern Recognition (ICPR), December 2016.
+Conference Papers|Jun-Cheng Chen, Amit Kumar, Rajeev Ranjan, Vishal M Patel, Azadeh Alavi, Rama Chellappa, "A Cascaded Convolutional Neural Network for Age Estimation of Unconstrained Faces," IEEE International Conference on Biometrics Theory, Applications and Systems (BTAS), September 2016.
+Conference Papers|Jun-Cheng Chen, Jingxiao Zheng, Vishal M Patel, Rama Chellappa, "Fisher Vector Encoded Deep Convolutional Features for Unconstrained Face Verification," IEEE International Conference on Image Processing (ICIP), September 2016.
+Conference Papers|Jun-Cheng Chen, Vishal M Patel, Rama Chellappa, "Unconstrained Face Verification using Deep Cnn Features," IEEE Winter Conference on Applications of Computer Vision (WACV), March 2016.
+Conference Papers|Soumyadip Sengupta, Jun-Cheng Chen, Carlos Castillo, Vishal M Patel, Rama Chellappa, David W Jacobs, "Frontal to Profile Face Verification in the Wild," IEEE Winter Conference on Applications of Computer Vision (WACV), March 2016.
+Conference Papers|Rama Chellappa, Jun-Cheng Chen, Rajeev Ranjan, Swami Sankaranarayanan, Amit Kumar, Vishal M Patel, Carlos D Castillo, "Towards the Design of an end-to-end automated system for image and video-based recognition," Information Theory and Applications Workshop (ITA), January 2016.
+Conference Papers|Rajeev Ranjan, Sabrina Zhou, Jun Cheng Chen, Amit Kumar, Azadeh Alavi, Vishal M Patel, Rama Chellappa, "Unconstrained Age Estimation with Deep Convolutional Neural Networks," IEEE International Conference on Computer Vision Workshops, December 2015.
+Conference Papers|Jun-Cheng Chen, Rajeev Ranjan, Amit Kumar, Ching-Hui Chen, Vishal M Patel, Rama Chellappa, "An End-to-End System for Unconstrained Face Verification with Deep Convolutional Neural Networks," IEEE International Conference on Computer Vision Workshops, December 2015.
+Conference Papers|Jun-Cheng Chen, Vishal M Patel, Rama Chellappa, "Landmark-based Fisher Vector Representation for Video-based Face Verification," IEEE International Conference on Image Processing (ICIP), September 2015.
+Conference Papers|Jun-Cheng Chen, Swami Sankaranarayanan, Vishal M Patel, Rama Chellappa, "Unconstrained Face Verification using Fisher Vectors Computed from Frontalized Faces," IEEE International Conference on Biometrics Theory, Applications and Systems (BTAS), September 2015.
+Conference Papers|Jun-Cheng Chen, Vishal M Patel, Huy Tho Ho, Rama Chellappa, "Dictionary-based Video Face Recognition using Dense Multi-scale Facial Landmark Features," IEEE International Conference on Image Processing (ICIP), October 2014.
+Conference Papers|Chia-Wei Wang, Wen-Huang Cheng, Jun-Cheng Chen, Shu-Sian Yang, Ja-Ling Wu, "Film Narrative Exploration through The Analysis of Aesthetic Elements," International Conference on Multimedia Modeling, January 2007.
+Conference Papers|Jun-Cheng Chen, Wei-Ta Chu, Jin-Hau Kuo, Chung-Yi Weng, Ja-Ling Wu, "Audiovisual Slideshow: Present Your Journey by Photos," ACM International Conference on Multimedia, October 2006.
+Conference Papers|Jun-Cheng Chen, Wei-Ta Chu, Jin-Hau Kuo, Chung-Yi Weng, Ja-Ling Wu, "Tiling Slideshow," ACM International Conference on Multimedia, October 2006.
+Conference Papers|Yi-Chin Huang, Yi-Shin Tung, Jun-Cheng Chen, Sung-Wen Wang, Ja-Ling Wu, "An Adaptive Edge Detection based Colorization Algorithm and Its Applications," ACM international conference on Multimedia, November 2005.
+Conference Papers|Jun-Cheng Chen, Jen-Hao Yeh, Wei-Ta Chu, Jin-Hau Kuo, Ja-Ling Wu, "Improvement of Commercial Boundary Detection using Audiovisual Features," Pacific-Rim Conference on Multimedia (PCM), November 2005.
+Conference Papers|Chia-Hao Chang, Chi-Hao Wu, Jun-Cheng Chen, Jin-Hau Kuo and Ja-Ling Wu, "A Real-time Semi-Automatic Video Segmentation System Based on Mathematical Morphology," International Conference on Visual Communications and Image Processing (VCIP), July 2005.
+Conference Papers|Jen-Hao Yeh, Jun-Cheng Chen, Jin-Hau Kuo, Ja-Ling Wu, "TV Commercial Detection in News Program Videos," IEEE International Symposium on Circuits and Systems, May 2005.
+Conference Papers|Chia-Wei Lin, Ja-Ling Wu, Jun-Cheng Chen, "An Algorithm for Construction of Error-Correcting Symmetrical Reversible Variable Length Codes," International Conference on Advances in Mobile Multimedia, September 2004.
+Book & Book Chapters|Jun-Cheng Chen, Rajeev Ranjan, Vishal M Patel, Carlos D Castillo, Rama Chellappa, "Unconstrained Face Identification and Verification Using Deep Convolutional Features," Deep Learning in Biometrics, pages 33-64, CRC Press, March 2018.
+    </template>
+
+    <script>
+        const publicationMeta = {
+            "GOT-JEPA: Generic Object Tracking with Model Adaptation and Occlusion Handling using Joint-Embedding Predictive Architecture": {
+                paper: "https://arxiv.org/abs/2602.14771"
+            },
+            "Improving Visual Object Tracking through Visual Prompting": {
+                paper: "https://arxiv.org/abs/2409.18901"
+            },
+            "Make Graph-based Referring Expression Comprehension Great Again through Expression-guided Dynamic Gating and Regression": {
+                paper: "https://arxiv.org/abs/2409.03385"
+            },
+            "A Lightweight Enhancement Approach for Real-Time Semantic Segmentation by Distilling Rich Knowledge from Pre-Trained Vision-Language Model": {
+                paper: "https://nowpublishers.com/article/OpenAccessDownload/SIP-20240015"
+            },
+            "Text Slider: Efficient and Plug-and-Play Continuous Concept Control for Image/Video Synthesis via LoRA Adapters": {
+                paper: "https://openaccess.thecvf.com/content/WACV2026/papers/Chiu_Text_Slider_Efficient_and_Plug-and-Play_Continuous_Concept_Control_for_ImageVideo_WACV_2026_paper.pdf",
+                project: "https://textslider.github.io/",
+                code: "https://github.com/aiiu-lab/TextSlider",
+                image: "assets/textslider-teaser.gif"
+            },
+            "CropAT: Leveraging Diffusion-Generated Target-Like Cropped Objects for Pseudo-Label Refinement in Domain-Adaptive Object Detection": {
+                paper: "https://openaccess.thecvf.com/content/WACV2026/papers/Huang_CropAT_Leveraging_Diffusion-Generated_Target-Like_Cropped_Objects_for_Pseudo-Label_Refinement_in_WACV_2026_paper.pdf"
+            },
+            "KMOPS: Keypoint-Driven Method for Multi-Object Pose and Metric Size Estimation from Stereo Images": {
+                paper: "https://openaccess.thecvf.com/content/WACV2026/papers/Wu_KMOPS_Keypoint-Driven_Method_for_Multi-Object_Pose_and_Metric_Size_Estimation_WACV_2026_paper.pdf",
+                project: "https://kmopss.github.io/",
+                code: "https://github.com/yingkunwu/kmops",
+                image: "assets/publications/teasers/kmops-keypoint-driven-method-for-multi-object-pose-and-metric-size-estimation-from-stereo-images.jpg"
+            },
+            "M-ErasureBench: A Comprehensive Multimodal Evaluation Benchmark for Concept Erasure in Diffusion Models": {
+                paper: "https://openaccess.thecvf.com/content/WACV2026/papers/Weng_M-ErasureBench_A_Comprehensive_Multimodal_Evaluation_Benchmark_for_Concept_Erasure_in_WACV_2026_paper.pdf"
+            },
+            "Gen-n-Val: Agentic Image Data Generation and Validation": {
+                paper: "https://arxiv.org/abs/2506.04676",
+                image: "assets/publications/teasers/gen-n-val-agentic-image-data-generation-and-validation.jpg"
+            },
+            "GOT-Edit: Geometry-Aware Generic Object Tracking via Online Model Editing": {
+                paper: "https://arxiv.org/abs/2602.08550",
+                image: "assets/publications/teasers/got-edit-geometry-aware-generic-object-tracking-via-online-model-editing.jpg"
+            },
+            "StyleDiT: A Unified Framework for Diverse Child and Partner Faces Synthesis with Style Latent Diffusion Transformer": {
+                paper: "https://arxiv.org/abs/2412.10785"
+            },
+            "4D Neural Voxel Splatting: Dynamic Scene Rendering with Voxelized Guassian Splatting": {
+                paper: "https://arxiv.org/abs/2511.00560",
+                image: "assets/publications/teasers/4d-neural-voxel-splatting-dynamic-scene-rendering-with-voxelized-guassian-splatting.jpg"
+            },
+            "Rethinking Forgery Attacks on Semantic Watermarks in Black-Box Settings: A Geometric Distortion Perspective": {
+                project: "https://www.iis.sinica.edu.tw/zh/page/ResearchOverview/RecentResearchResults.html"
+            },
+            "FIPER: Factorized Features for Robust Image Super-Resolution and Compression": {
+                paper: "https://openreview.net/forum?id=gcrDTxZTl0",
+                project: "https://jayisaking.github.io/FIPER/",
+                code: "https://github.com/jayisaking/FIPER",
+                image: "assets/publications/teasers/fiper-factorized-features-for-robust-image-super-resolution-and-compression.jpg"
+            },
+            "Enhancing Robustness in Post-Processing Watermarking: An Ensemble Attack Network Using CNNs and Transformers": {
+                paper: "https://arxiv.org/abs/2509.03006",
+                code: "https://github.com/aiiu-lab/DeepRobustWatermark"
+            },
+            "Generation and Comprehension Hand-in-Hand: Vision-guided Expression Diffusion for Boosting Referring Expression Generation and Comprehension": {
+                paper: "https://arxiv.org/abs/2409.03385"
+            },
+            "Training-Free Diffusion Model Alignment with Sampling Demons": {
+                paper: "https://arxiv.org/abs/2410.05760",
+                project: "https://rareone0602.github.io/Demon_page/",
+                code: "https://github.com/aiiu-lab/DemonSampling/tree/main",
+                image: "assets/publications/teasers/training-free-diffusion-model-alignment-with-sampling-demons.jpg"
+            },
+            "DiffQRCoder: Diffusion-based Aesthetic QR Code Generation with Scanning Robustness Guided Iterative Refinement": {
+                paper: "https://www.arxiv.org/abs/2409.06355",
+                project: "https://jwliao1209.github.io/DiffQRCoder/",
+                code: "https://github.com/jwliao1209/DiffQRCoder",
+                image: "assets/publications/teasers/diffqrcoder-diffusion-based-aesthetic-qr-code-generation-with-scanning-robustness-guided-iterative-refinement.webp"
+            },
+            "BLENDA: Domain Adaptive Object Detection through Diffusion-based Blending": {
+                paper: "https://arxiv.org/abs/2401.09921",
+                code: "https://github.com/aiiu-lab/BlenDA"
+            },
+            "MeDM: Mediating Image Diffusion Models for Video-to-Video Translation with Temporal Correspondence Guidance": {
+                paper: "https://arxiv.org/abs/2308.10079",
+                project: "https://medm2023.github.io/",
+                code: "https://github.com/aiiu-lab/MeDM",
+                image: "assets/publications/teasers/medm-mediating-image-diffusion-models-for-video-to-video-translation-with-temporal-correspondence-guidance.jpg"
+            },
+            "Towards Adversarial Robustness for Multi-Mode Data through Metric Learning": {
+                paper: "https://www.mdpi.com/1424-8220/23/13/6173"
+            },
+            "CLIPREC: Graph-based Domain Adaptive Network for Zero-Shot Referring Expression Comprehension": {
+                paper: "https://ieeexplore.ieee.org/abstract/document/10191020"
+            },
+            "DEFAEK: Domain Effective Fast Adaptive Network for Face Anti-Spoofing": {
+                paper: "https://www.sciencedirect.com/science/article/abs/pii/S0893608023000187"
+            },
+            "Towards a Controllable and Reversible Privacy Protection System for Facial Images through Enhanced Multi-Factor Modifier Networks": {
+                paper: "https://www.mdpi.com/1099-4300/25/2/272"
+            },
+            "Social Media Popularity Prediction based on Multi-modal Self-Attention Mechanisms": {
+                paper: "https://ieeexplore.ieee.org/abstract/document/9656132"
+            },
+            "An Automatic System for Unconstrained Video-based Face Recognition": {
+                paper: "https://ieeexplore.ieee.org/abstract/document/8999558"
+            },
+            "UID-GAN: Unsupervised Image Deblurring via Disentangled Representations": {
+                paper: "https://ieeexplore.ieee.org/document/8935440"
+            },
+            "Deep Convolutional Neural Networks In the Face of Caricature": {
+                paper: "https://www.nature.com/articles/s42256-019-0111-7"
+            },
+            "An Experimental Evaluation of Covariates Effects on Unconstrained Face Verification": {
+                paper: "https://ieeexplore.ieee.org/document/8599059"
+            },
+            "S^2SiamFC: Self-supervised Fully Convolutional Siamese Network for Visual Tracking": {
+                paper: "https://basiclab.nctu.edu.tw/assets/%F0%9D%91%862SiamFC_MM2020.pdf"
+            },
+            "The Devil is in the Details: Self-Supervised Attention for Vehicle Re-Identification": {
+                paper: "https://link.springer.com/chapter/10.1007/978-3-030-58568-6_22"
+            },
+            "Towards Real-Time Systems for Vehicle Re-Identification, Multi-Camera Tracking, and Anomaly Detection": {
+                paper: "https://openaccess.thecvf.com/content_CVPRW_2020/papers/w35/Peri_Towards_Real-Time_Systems_for_Vehicle_Re-Identification_Multi-Camera_Tracking_and_Anomaly_CVPRW_2020_paper.pdf"
+            },
+            "Learning Sparse Neural Networks Through Mixture-Distributed Regularization": {
+                paper: "https://openaccess.thecvf.com/content_CVPRW_2020/papers/w40/Huang_Learning_Sparse_Neural_Networks_Through_Mixture-Distributed_Regularization_CVPRW_2020_paper.pdf"
+            },
+            "Uncertainty Modeling of Contextual-Connection between Tracklets for Unconstrained Video-based Face Recognition": {
+                paper: "http://openaccess.thecvf.com/content_ICCV_2019/papers/Zheng_Uncertainty_Modeling_of_Contextual-Connections_Between_Tracklets_for_Unconstrained_Video-Based_Face_ICCV_2019_paper.pdf"
+            },
+            "A Dual Path Model With Adaptive Attention For Vehicle Re-Identification": {
+                paper: "http://openaccess.thecvf.com/content_ICCV_2019/papers/Khorramshahi_A_Dual-Path_Model_With_Adaptive_Attention_for_Vehicle_Re-Identification_ICCV_2019_paper.pdf"
+            },
+            "Unsupervised Domain-Specific Deblurring via Disentangled Representations": {
+                paper: "https://arxiv.org/abs/1903.01594"
+            }
+        };
+
+        const thumbnailRules = [
+            { keys: ["text slider", "diffusion", "generative", "synthesis", "slider", "restoration", "super-resolution", "qr code"], image: "assets/thumb-generative.png" },
+            { keys: ["tracking", "track", "got", "re-identification", "vehicle"], image: "assets/thumb-tracking.png" },
+            { keys: ["deepfake", "forgery", "watermark", "adversarial", "attack", "erasure", "spoofing", "security", "backdoor"], image: "assets/thumb-security.png" },
+            { keys: ["multimodal", "vision-language", "language", "audio-visual", "vlm", "llm", "referring expression"], image: "assets/thumb-multimodal.png" },
+            { keys: ["pose", "robot", "stereo", "physical", "4d", "voxel", "splatting", "3d"], image: "assets/thumb-physical-ai.png" },
+            { keys: ["face", "biometric", "kinship", "caricature", "verification", "recognition", "age"], image: "assets/thumb-face.png" }
+        ];
+
+        const groups = ["Journal Articles", "Conference Papers", "Book & Book Chapters"];
+        const root = document.querySelector("#publication-root");
+        const search = document.querySelector(".pub-search");
+        const filters = [...document.querySelectorAll(".pub-filter")];
+
+        function parseRecord(line) {
+            const divider = line.indexOf("|");
+            const type = line.slice(0, divider);
+            const text = line.slice(divider + 1);
+            const firstQuote = text.indexOf('"');
+            const secondQuote = text.indexOf('"', firstQuote + 1);
+            const authors = text.slice(0, firstQuote).replace(/,\s*$/, "");
+            const title = text.slice(firstQuote + 1, secondQuote);
+            const details = text.slice(secondQuote + 2).replace(/^\s*,\s*/, "").trim();
+            const years = details.match(/\b(20\d{2}|19\d{2})\b/g) || [];
+            const year = years.length ? years[years.length - 1] : "To appear";
+            return { type, authors, title, details, year };
+        }
+
+        function thumbnailFor(record) {
+            const meta = publicationMeta[record.title] || {};
+            if (meta.image) return meta.image;
+            const haystack = `${record.title} ${record.details}`.toLowerCase();
+            const match = thumbnailRules.find(rule => rule.keys.some(key => haystack.includes(key)));
+            return match ? match.image : "assets/thumb-vision.png";
+        }
+
+        function linkButton(label, url, fallback) {
+            if (!url) {
+                const span = document.createElement("span");
+                span.textContent = fallback;
+                return span;
+            }
+            const a = document.createElement("a");
+            a.href = url;
+            a.target = "_blank";
+            a.rel = "noopener";
+            a.textContent = label;
+            return a;
+        }
+
+        function createCard(record) {
+            const links = publicationMeta[record.title] || {};
+            const card = document.createElement("article");
+            card.className = "pub-card";
+            card.dataset.type = record.type;
+            card.dataset.search = `${record.title} ${record.authors} ${record.details}`.toLowerCase();
+
+            const img = document.createElement("img");
+            img.src = thumbnailFor(record);
+            img.alt = `${record.title} thumbnail`;
+            card.appendChild(img);
+
+            const body = document.createElement("div");
+            const venue = document.createElement("span");
+            venue.className = "pub-venue";
+            venue.textContent = record.type;
+            body.appendChild(venue);
+
+            const title = document.createElement("span");
+            title.className = "pub-title";
+            title.textContent = record.title;
+            body.appendChild(title);
+
+            const authors = document.createElement("p");
+            authors.className = "pub-authors";
+            authors.textContent = record.authors;
+            body.appendChild(authors);
+
+            const meta = document.createElement("p");
+            meta.className = "pub-meta";
+            meta.innerHTML = `<span class="pub-year">${record.year}</span> - ${record.details}`;
+            body.appendChild(meta);
+
+            const linkWrap = document.createElement("div");
+            linkWrap.className = "pub-links";
+            linkWrap.appendChild(linkButton("Paper", links.paper, "Paper not yet available"));
+            linkWrap.appendChild(linkButton("Project", links.project, "Project page not available"));
+            linkWrap.appendChild(linkButton("GitHub", links.code, "Code not available"));
+            body.appendChild(linkWrap);
+
+            card.appendChild(body);
+            return card;
+        }
+
+        const publications = document.querySelector("#publication-data").content.textContent
+            .split("\n")
+            .map(line => line.trim())
+            .filter(Boolean)
+            .map(parseRecord);
+
+        function render() {
+            const activeFilter = filters.find(button => button.classList.contains("active")).dataset.filter;
+            const query = search.value.trim().toLowerCase();
+            root.innerHTML = "";
+
+            groups.forEach(group => {
+                const records = publications.filter(record => {
+                    const typeMatch = activeFilter === "all" || record.type === activeFilter;
+                    const queryMatch = !query || `${record.title} ${record.authors} ${record.details}`.toLowerCase().includes(query);
+                    return record.type === group && typeMatch && queryMatch;
+                });
+                if (!records.length) return;
+
+                const section = document.createElement("section");
+                section.className = "pub-section";
+                const h2 = document.createElement("h2");
+                h2.textContent = `${group} (${records.length})`;
+                section.appendChild(h2);
+
+                const list = document.createElement("div");
+                list.className = "pub-list";
+                records.forEach(record => list.appendChild(createCard(record)));
+                section.appendChild(list);
+                root.appendChild(section);
+            });
+        }
+
+        filters.forEach(button => {
+            button.addEventListener("click", () => {
+                filters.forEach(item => item.classList.remove("active"));
+                button.classList.add("active");
+                render();
+            });
+        });
+
+        search.addEventListener("input", render);
+        render();
+    </script>
+
+    <footer>&copy; 2026 Artificial Intelligence and Image Understanding (AIIU) Lab, CITI, Academia Sinica</footer>
 </body>
 </html>

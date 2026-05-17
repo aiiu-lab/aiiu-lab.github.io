@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | AIIU Lab</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="assets/logo.jpg" alt="CITI Logo">
+            <a href="index.html" class="nav-logo active">
+                <img src="assets/AIIU_logo.png" alt="AIIU Lab Logo">
                 <span>AIIU Lab</span>
             </a>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="members.html">Members</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="album.html">Album</a></li>
@@ -22,94 +23,184 @@
         </div>
     </nav>
 
-    <header>
-        <h1>Artificial Intelligence & Image Understanding (AIIU) Lab</h1>
-        <p>Research Center for Information Technology Innovation, Academia Sinica</p>
-        <p style="font-size: 1.1rem; margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto;">
-            Led by <strong>Dr. <a href="https://homepage.citi.sinica.edu.tw/pages/pullpull/index_en.html">Jun-Cheng Chen</a></strong> (Associate Research Fellow).<br>We focus on Computer Vision and Artificial Intelligence.
-        </p>
+    <header class="hero">
+        <img class="hero-bg" src="assets/aiiu-hero-banner.png" alt="">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div>
+                <p class="eyebrow">Research Center for Information Technology Innovation, Academia Sinica</p>
+                <h1>Artificial Intelligence and Image Understanding Lab</h1>
+                <p class="hero-copy">
+                    We build secure, embodied, and agentic visual intelligence: from computer vision and deepfake detection to MLLMs, physical AI, and multimodal AI agents.
+                </p>
+                <div class="hero-tags" aria-label="Research areas">
+                    <span>Computer Vision</span>
+                    <span>AI Security</span>
+                    <span>Deepfake Detection</span>
+                    <span>MLLM</span>
+                    <span>Physical AI</span>
+                    <span>Agentic AI</span>
+                    <span>Generative AI</span>
+                </div>
+                <p class="hero-pi">
+                    Led by <a href="https://homepage.citi.sinica.edu.tw/pages/pullpull/index_en.html" target="_blank" rel="noopener">Dr. Jun-Cheng Chen</a>, Associate Research Fellow.
+                </p>
+            </div>
+        </div>
     </header>
 
-    <div class="container">
-        <!-- Recent News -->
+    <main class="container">
+        <section class="intro-grid">
+            <article class="mission-panel">
+                <h2>Research Focus</h2>
+                <p>
+                    AIIU Lab studies visual intelligence across perception, generation, robustness, biometrics, tracking, 3D reasoning, multimodal reasoning, and autonomous validation.
+                </p>
+            </article>
+            <article class="mission-panel">
+                <h2>Lab Direction</h2>
+                <p>
+                    Our work connects foundation models with real visual data, physical scenes, and reliable evaluation for practical AI systems.
+                </p>
+            </article>
+        </section>
+
         <section>
-            <h2>Recent News</h2>
-            <!-- date may be wrong, please modify yourself -->
-            <div class="news-item">
-                <div class="news-date">Mar 2026</div>
-                <div class="news-content">One conference paper accepted to <strong>CVPR 2026</strong></div>
+            <div class="section-heading">
+                <h2>Research Areas</h2>
             </div>
-            <div class="news-item">
-                <div class="news-date">Nov 2025</div>
-                <div class="news-content">Four conference paper accepted to <strong>WACV 2026</strong></div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">Sep 2025</div>
-                <div class="news-content">One conference paper accepted to <strong>NeurIPS 2025</strong></div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">Sep 2025</div>
-                <div class="news-content">Four conference paper accepted to <strong>ICIP 2025</strong></div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">Sep 2025</div>
-                <div class="news-content">Two conference paper accepted to <strong>AVSS 2025</strong></div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">Sep 2025</div>
-                <div class="news-content">One conference paper accepted to <strong>ICML 2025</strong></div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">Sep 2025</div>
-                <div class="news-content">One conference paper accepted to <strong>CVPR 2025</strong></div>
-            </div>
-            <div class="news-item">
-                <div class="news-date">Sep 2025</div>
-                <div class="news-content">Two conference paper accepted to <strong>ICLR 2025</strong></div>
+            <div class="research-grid">
+                <article class="research-card">
+                    <img src="assets/thumb-security.png" alt="">
+                    <h3>AI Security</h3>
+                    <p>Watermark robustness, adversarial attacks, backdoors, model safety, and trustworthy visual generation.</p>
+                </article>
+                <article class="research-card">
+                    <img src="assets/thumb-security.png" alt="">
+                    <h3>Deepfake Detection</h3>
+                    <p>Foundation-model adaptation, explainable detection, face forgery analysis, and robust media forensics.</p>
+                </article>
+                <article class="research-card">
+                    <img src="assets/thumb-multimodal.png" alt="">
+                    <h3>MLLM</h3>
+                    <p>Vision-language reasoning, hallucination analysis, multimodal evaluation, and reliable foundation models.</p>
+                </article>
+                <article class="research-card">
+                    <img src="assets/thumb-physical-ai.png" alt="">
+                    <h3>Physical AI</h3>
+                    <p>Object pose, 3D/4D scene understanding, stereo geometry, robotic perception, and real-world visual grounding.</p>
+                </article>
+                <article class="research-card">
+                    <img src="assets/thumb-multimodal.png" alt="">
+                    <h3>Agentic AI</h3>
+                    <p>LLM/VLLM agents for data generation, validation, prompt optimization, and autonomous visual workflows.</p>
+                </article>
+                <article class="research-card">
+                    <img src="assets/thumb-generative.png" alt="">
+                    <h3>Generative Vision</h3>
+                    <p>Controllable diffusion, image/video synthesis, restoration, concept control, and creative visual modeling.</p>
+                </article>
             </div>
         </section>
 
-        <!-- Latest Works -->
-         <section id="latest-works">
-            <h2 style="justify-content: center;">Latest Works</h2> <div class="work-card">
-                <img src="assets/textslider-teaser.gif" alt="Project Thumbnail">
-                <div class="work-info">
-                    <h3>Text Slider: Efficient and Plug-and-Play Continuous Concept Control for Image/Video Synthesis via LoRA Adapters</h3>
-                    <span class="work-authors">
-                        <a href="https://itsnickchiu.github.io/" target="_blank">Pin-Yen Chiu</a>, 
-                        <a href="https://ishengfang.github.io/">I-Sheng Fang</a>, and 
-                        <a href="https://homepage.citi.sinica.edu.tw/pages/pullpull/index_en.html">Jun-Cheng Chen</a>
-                    </span>
-                    <span class="work-venue">WACV 2026</span>
-                    <!-- <span class="work-authors"><a href="">Pin-Yen Chiu</a>, <a href="">I-Sheng Fang</a>, and <a href="">Jun-Cheng Chen</a></span> -->
-                    <p>A lightweight, plug-and-play framework for continuous concept control, achieving up to 47× faster training and 4× GPU memory reduction via low-rank adaptation within text encoder.</p>
-                    <div class="work-links">
-                        <a href="https://textslider.github.io/">[Project Page]</a> <a href="https://openaccess.thecvf.com/content/WACV2026/html/Chiu_Text_Slider_Efficient_and_Plug-and-Play_Continuous_Concept_Control_for_ImageVideo_WACV_2026_paper.html">[Paper]</a> <a href="https://github.com/aiiu-lab/TextSlider">[Code]</a>
-                    </div>
+        <section>
+            <div class="section-heading">
+                <h2>Recent News</h2>
+                <a href="publications.html">View all publications</a>
+            </div>
+            <div class="news-list">
+                <div class="news-item">
+                    <div class="news-date">2026</div>
+                    <div class="news-content">New papers are to appear in <strong>ICIP</strong>, <strong>ICML</strong>, <strong>CVPR Findings</strong>, <strong>FG</strong>, and <strong>ICLR</strong>.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Mar 2026</div>
+                    <div class="news-content">Four papers will appear at <strong>WACV 2026</strong>, spanning diffusion control, object pose estimation, domain-adaptive detection, and concept erasure evaluation.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Dec 2025</div>
+                    <div class="news-content">New work accepted to <strong>NeurIPS 2025</strong> and <strong>ACML 2025</strong>.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Sep 2025</div>
+                    <div class="news-content">A strong run of papers appeared at <strong>ICIP 2025</strong>, <strong>MMSP 2025</strong>, and <strong>AVSS 2025</strong>, including oral and spotlight presentations.</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Apr-Jul 2025</div>
+                    <div class="news-content">AIIU-related work appeared at <strong>ICLR 2025</strong>, <strong>ICML 2025</strong>, and <strong>CVPR 2025</strong>.</div>
                 </div>
             </div>
         </section>
-    </div>
+
+        <section id="latest-works">
+            <div class="section-heading">
+                <h2>Featured Works</h2>
+            </div>
+            <div class="work-grid">
+                <article class="work-card">
+                    <img src="assets/textslider-teaser.gif" alt="Text Slider teaser">
+                    <div class="work-info">
+                        <span class="work-venue">WACV 2026</span>
+                        <h3>Text Slider: Efficient and Plug-and-Play Continuous Concept Control for Image/Video Synthesis via LoRA Adapters</h3>
+                        <p class="work-authors">Pin-Yen Chiu, I-Sheng Fang, Jun-Cheng Chen</p>
+                        <p>A lightweight framework for continuous concept control in image and video synthesis through low-rank text-encoder adaptation.</p>
+                        <div class="work-links">
+                            <a href="https://textslider.github.io/" target="_blank" rel="noopener">Project</a>
+                            <a href="https://arxiv.org/abs/2509.18831" target="_blank" rel="noopener">Paper</a>
+                            <a href="https://github.com/aiiu-lab/TextSlider" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="assets/thumb-multimodal.png" alt="Gen-n-Val thumbnail">
+                    <div class="work-info">
+                        <span class="work-venue">CVPR Findings 2026</span>
+                        <h3>Gen-n-Val: Agentic Image Data Generation and Validation</h3>
+                        <p class="work-authors">Jing-En Huang, I-Sheng Fang, Tzuhsuan Huang, Yu-Lun Liu, Chih-Yu Wang, Jun-Cheng Chen</p>
+                        <p>An agentic pipeline for generating and validating synthetic visual data for robust computer vision training.</p>
+                        <div class="work-links">
+                            <a href="https://arxiv.org/abs/2506.04676" target="_blank" rel="noopener">Paper</a>
+                            <span>Project page not available</span>
+                            <span>Code not available</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="assets/thumb-physical-ai.png" alt="KMOPS thumbnail">
+                    <div class="work-info">
+                        <span class="work-venue">WACV 2026</span>
+                        <h3>KMOPS: Keypoint-Driven Method for Multi-Object Pose and Metric Size Estimation from Stereo Images</h3>
+                        <p class="work-authors">Ying-Kun Wu, Yi Shen, Tzuhsuan Huang, I-Sheng Fang, Jun-Cheng Chen</p>
+                        <p>A stereo-based method for estimating multi-object 6D pose and metric size through keypoint geometry.</p>
+                        <div class="work-links">
+                            <a href="https://kmopss.github.io/" target="_blank" rel="noopener">Project</a>
+                            <a href="https://openaccess.thecvf.com/content/WACV2026/papers/Wu_KMOPS_Keypoint-Driven_Method_for_Multi-Object_Pose_and_Metric_Size_Estimation_WACV_2026_paper.pdf" target="_blank" rel="noopener">Paper</a>
+                            <span>Code not available</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <section class="footer-contact">
-        <div class="container" style="padding:0 20px;">
+        <div class="container">
             <div class="contact-grid">
                 <div class="map-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7682432565284!2d121.61289517571558!3d25.041937937971205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab45c1d46267%3A0x79cd186dabf5a4b6!2sResearch%20Center%20for%20Information%20Technology%2C%20Academia%20Sinica!5e0!3m2!1sen!2stw!4v1774527193305!5m2!1sen!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="contact-info">
                     <h3>Contact Us</h3>
-                    <div class="contact-details">
-                        <p><strong>PI:</strong> Dr. Jun-Cheng Chen</p>
-                        <p><strong>Email:</strong> pullpull@citi.sinica.edu.tw</p>
-                        <p><strong>Address:</strong> No. 128, Sec. 2, Academia Rd., Nangang Dist., Taipei City 115201, Taiwan (Research Center for Information Technology Innovation)</p>
-                        <!-- <p><strong>Office:</strong> Room 405, CITI Building</p> -->
-                    </div>
+                    <p><strong>PI:</strong> Dr. Jun-Cheng Chen</p>
+                    <p><strong>Email:</strong> pullpull@citi.sinica.edu.tw</p>
+                    <p><strong>Address:</strong> No. 128, Sec. 2, Academia Rd., Nangang Dist., Taipei City 115201, Taiwan</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>&copy; 2026 Artificial Intelligence & Image Understanding (AIIU) Lab, CITI, Academia Sinica</footer>
+    <footer>&copy; 2026 Artificial Intelligence and Image Understanding (AIIU) Lab, CITI, Academia Sinica</footer>
 </body>
 </html>
